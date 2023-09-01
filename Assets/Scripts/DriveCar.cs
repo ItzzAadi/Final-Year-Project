@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class DriveCar : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    [SerializeField] private Rigidbody2D _frontTireRB;
+    [SerializeField] private Rigidbody2D _backTireRB;
+    [SerializeField] private Rigidbody2D _carRBCheckingIfThisWillSHow;
+    [SerializeField] private float _speed = 150f;
+    [SerializeField] private float _rotationSpeed = 300f;
+    private float _moveInput;
+    
+    private void Update(){
+        _moveInput = Input.GetAxisRaw("Horizontal");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void FixedUpdate(){
+        _frontTireRB.AddTorque(-_moveInput * _speed * Time.fixedDeltaTime);
+        _backTireRB.AddTorque(-_moveInput * _speed * Time.fixedDeltaTime);
+        _carRBCheckingIfThisWillSHow.AddTorque(_moveInput * _rotationSpeed * Time.fixedDeltaTime);
     }
 }
