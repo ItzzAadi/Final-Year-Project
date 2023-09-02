@@ -12,12 +12,12 @@ public class DriveDeathFromHead : MonoBehaviour
             instance = this;
         }
     } */
-
-    private void OnCollisionEnter2d(Collision2D collision){
-        Debug.Log("OnCollisionEnter2d() has been called");
-        if(collision.gameObject.CompareTag("Ground")){
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("Entered into OnTriggerEvent2D");
+        if (collision.gameObject.CompareTag("Ground"))
+        {
             GameManager.instance.GameOver();
-            Debug.Log("Head has touched the Ground");
         }
     }
 
