@@ -1456,7 +1456,7 @@ Transform:
   m_GameObject: {fileID: 1455361579}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.249, y: -0.165, z: 0}
+  m_LocalPosition: {x: 2.249, y: -0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1679,7 +1679,7 @@ Transform:
   m_GameObject: {fileID: 1508735316}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.626, y: -0.175, z: 0}
+  m_LocalPosition: {x: 0.626, y: -0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1881,11 +1881,11 @@ WheelJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0.626, y: -0.17499995}
+  m_Anchor: {x: 0.6260004, y: -0.20000005}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_Suspension:
-    m_DampingRatio: 0.35
-    m_Frequency: 3
+    m_DampingRatio: 0.3
+    m_Frequency: 3.5
     m_Angle: 90
   m_UseMotor: 0
   m_Motor:
@@ -1906,11 +1906,11 @@ WheelJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 2.249, y: -0.16499996}
+  m_Anchor: {x: 2.2490005, y: -0.20000005}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_Suspension:
-    m_DampingRatio: 0.35
-    m_Frequency: 3
+    m_DampingRatio: 0.3
+    m_Frequency: 3.5
     m_Angle: 90
   m_UseMotor: 0
   m_Motor:
@@ -2487,7 +2487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fuelImage: {fileID: 1844408178}
-  _fuelDrainSpeed: 1
+  _fuelDrainSpeed: 1.62
   _maxFuelAmount: 100
   _fuelGradient:
     serializedVersion: 2
