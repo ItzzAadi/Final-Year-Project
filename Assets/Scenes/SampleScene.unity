@@ -2109,7 +2109,7 @@ GameObject:
   - component: {fileID: 1997406154}
   m_Layer: 0
   m_Name: Car
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3788,6 +3788,63 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!1001 &2970505166183703936
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5207238008116517286, guid: 274ef9f3d0d235a488042c43e99fc17e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 44.384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5207238008116517286, guid: 274ef9f3d0d235a488042c43e99fc17e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 5207238008116517286, guid: 274ef9f3d0d235a488042c43e99fc17e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5207238008116517286, guid: 274ef9f3d0d235a488042c43e99fc17e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5207238008116517286, guid: 274ef9f3d0d235a488042c43e99fc17e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5207238008116517286, guid: 274ef9f3d0d235a488042c43e99fc17e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5207238008116517286, guid: 274ef9f3d0d235a488042c43e99fc17e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5207238008116517286, guid: 274ef9f3d0d235a488042c43e99fc17e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5207238008116517286, guid: 274ef9f3d0d235a488042c43e99fc17e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5207238008116517286, guid: 274ef9f3d0d235a488042c43e99fc17e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596654360822293289, guid: 274ef9f3d0d235a488042c43e99fc17e, type: 3}
+      propertyPath: m_Name
+      value: FuelCanister
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 274ef9f3d0d235a488042c43e99fc17e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3806,3 +3863,4 @@ SceneRoots:
   - {fileID: 1164356312}
   - {fileID: 1606813503}
   - {fileID: 2120796260}
+  - {fileID: 2970505166183703936}
