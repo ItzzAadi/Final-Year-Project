@@ -26,7 +26,7 @@ public class AgentAI : Agent{
     }
     public override void CollectObservations(VectorSensor sensor){
         UnityEngine.Vector2 _relativePosition = (UnityEngine.Vector2)transform.position - _initialPosition;
-        sensor.AddObservation(transform.position);
+        sensor.AddObservation(_relativePosition);
     }
 
     public override void OnActionReceived(ActionBuffers actions){
