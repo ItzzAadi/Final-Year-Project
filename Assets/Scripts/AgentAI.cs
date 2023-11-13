@@ -12,17 +12,29 @@ public class AgentAI : Agent{
 
     private GameManager _gameManager;
     private DriveCar _carController;
+    private FuelController _fuelController;
     private UnityEngine.Vector2 _initialPosition;
     private bool episodeEnded = false;
 
     void Start(){
         _carController = GetComponent<DriveCar>();
+        _gameManager = FindAnyObjectByType<GameManager>();
+        _fuelController = FindObjectOfType<FuelController>();
         _initialPosition = transform.position;
     }
 
     public override void OnEpisodeBegin(){
+        Debug.Log("New Episode Started");
         episodeEnded = false;
         _initialPosition = transform.position;
+
+
+        //_fuelController.FillFuel();
+        if(_gameManager == null){
+            Debug.Log("Game Manager is null");
+            _gameManager = FindAnyObjectByType<GameManager>();
+            Debug.Log("Found Object GameManager");
+        }
     }
     public override void CollectObservations(VectorSensor sensor){
         UnityEngine.Vector2 _relativePosition = (UnityEngine.Vector2)transform.position - _initialPosition;
@@ -42,11 +54,19 @@ public class AgentAI : Agent{
         float _distanceTraveled = transform.position.x - _initialPosition.x;
         if(_distanceTraveled >= 1.0f && !episodeEnded){
             SetReward(1.0f);
-            episodeEnded = true;
-            EndEpisode();
+            _initialPosition = transform.position;
+            //episodeEnded = true;
+            //EndEpisode();
         }
         else if (_distanceTraveled <0f){
             SetReward(-0.5f);
+        }
+        if(_fuelController.GetCurrentFuel() <= 0f & !episodeEnded){
+            episodeEnded = true;
+            Debug.Log("Episode ended");
+            EndEpisode();
+            _gameManager.RestartGame();
+            Debug.Log("Game Manager Restart Game is called");
         }
     }
 

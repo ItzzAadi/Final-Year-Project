@@ -1,0 +1,29 @@
+{
+    "EndlessRunner": {
+        "checkpoints": [
+            {
+                "steps": 1811,
+                "file_path": "results\\Test@13Nov16_07\\EndlessRunner\\EndlessRunner-1811.onnx",
+                "reward": -84.75,
+                "creation_time": 1699871919.716102,
+                "auxillary_file_paths": [
+                    "results\\Test@13Nov16_07\\EndlessRunner\\EndlessRunner-1811.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1811,
+            "file_path": "results\\Test@13Nov16_07\\EndlessRunner.onnx",
+            "reward": -84.75,
+            "creation_time": 1699871919.716102,
+            "auxillary_file_paths": [
+                "results\\Test@13Nov16_07\\EndlessRunner\\EndlessRunner-1811.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.1+cu118"
+    }
+}

@@ -44,4 +44,8 @@ public class FuelController : MonoBehaviour
         _currentFuelAmount = _maxFuelAmount;
         UpdateUI();
     }
+
+    public float GetCurrentFuel(){
+        return _currentFuelAmount;
+    }
 }
