@@ -20,13 +20,13 @@ public class AgentAI : Agent{
         _carController = GetComponent<DriveCar>();
         _gameManager = FindAnyObjectByType<GameManager>();
         _fuelController = FindObjectOfType<FuelController>();
-        _initialPosition = transform.position;
+        _initialPosition = transform.localPosition;
     }
 
     public override void OnEpisodeBegin(){
         Debug.Log("New Episode Started");
         episodeEnded = false;
-        _initialPosition = transform.position;
+        _initialPosition = transform.localPosition;
 
 
         //_fuelController.FillFuel();
@@ -37,7 +37,7 @@ public class AgentAI : Agent{
         }
     }
     public override void CollectObservations(VectorSensor sensor){
-        UnityEngine.Vector2 _relativePosition = (UnityEngine.Vector2)transform.position - _initialPosition;
+        UnityEngine.Vector2 _relativePosition = (UnityEngine.Vector2)transform.localPosition - _initialPosition;
         sensor.AddObservation(_relativePosition);
     }
 
@@ -51,10 +51,10 @@ public class AgentAI : Agent{
             _carController.Move(1f);
         }
 
-        float _distanceTraveled = transform.position.x - _initialPosition.x;
+        float _distanceTraveled = transform.localPosition.x - _initialPosition.x;
         if(_distanceTraveled >= 1.0f && !episodeEnded){
             SetReward(1.0f);
-            _initialPosition = transform.position;
+            _initialPosition = transform.localPosition;
             //episodeEnded = true;
             //EndEpisode();
         }
