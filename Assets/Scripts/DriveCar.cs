@@ -17,7 +17,7 @@ public class DriveCar : MonoBehaviour
         Move(__moveInput);
     }
 
-    private void Move(float _moveInput){
+    public void Move(float _moveInput){
         _frontTireRB.AddTorque(-_moveInput * _speed * Time.fixedDeltaTime);
         _backTireRB.AddTorque(-_moveInput * _speed * Time.fixedDeltaTime);
         _carRBCheckingIfThisWillSHow.AddTorque(_moveInput * _rotationSpeed * Time.fixedDeltaTime);

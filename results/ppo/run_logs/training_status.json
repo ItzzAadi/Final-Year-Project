@@ -2,22 +2,22 @@
     "EndlessRunner": {
         "checkpoints": [
             {
-                "steps": 4514,
-                "file_path": "results\\ppo\\EndlessRunner\\EndlessRunner-4514.onnx",
-                "reward": 0.0,
-                "creation_time": 1699866400.025715,
+                "steps": 576,
+                "file_path": "results\\ppo\\EndlessRunner\\EndlessRunner-576.onnx",
+                "reward": null,
+                "creation_time": 1699867573.696504,
                 "auxillary_file_paths": [
-                    "results\\ppo\\EndlessRunner\\EndlessRunner-4514.pt"
+                    "results\\ppo\\EndlessRunner\\EndlessRunner-576.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 4514,
+            "steps": 576,
             "file_path": "results\\ppo\\EndlessRunner.onnx",
-            "reward": 0.0,
-            "creation_time": 1699866400.025715,
+            "reward": null,
+            "creation_time": 1699867573.696504,
             "auxillary_file_paths": [
-                "results\\ppo\\EndlessRunner\\EndlessRunner-4514.pt"
+                "results\\ppo\\EndlessRunner\\EndlessRunner-576.pt"
             ]
         }
     },
