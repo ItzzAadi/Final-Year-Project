@@ -8,6 +8,7 @@ using UnityEngine.UIElements;
 
 public class AgentAI : Agent{
 
+    private GameManager _gameManager;
     public override void CollectObservations(VectorSensor sensor){
         sensor.AddObservation(transform.position);
     }

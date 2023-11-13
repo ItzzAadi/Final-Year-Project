@@ -14,7 +14,7 @@ public class DriveDeathFromHead : MonoBehaviour
     } */
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Entered into OnTriggerEvent2D");
+        //Debug.Log("Entered into OnTriggerEvent2D");
         if (collision.gameObject.CompareTag("Ground"))
         {
             GameManager.instance.GameOver();
