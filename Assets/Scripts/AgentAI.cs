@@ -27,14 +27,19 @@ public class AgentAI : Agent{
         Debug.Log("New Episode Started");
         episodeEnded = false;
         _initialPosition = transform.localPosition;
-
+        _gameManager = FindAnyObjectByType<GameManager>();
 
         //_fuelController.FillFuel();
-        if(_gameManager == null){
+        /* if(_gameManager == null){
             Debug.Log("Game Manager is null");
             _gameManager = FindAnyObjectByType<GameManager>();
-            Debug.Log("Found Object GameManager");
-        }
+            if(_gameManager != null){
+                Debug.Log("Found Object GameManager");
+            }
+            else{
+                Debug.Log("Still not found");
+            }
+        } */
     }
     public override void CollectObservations(VectorSensor sensor){
         UnityEngine.Vector2 _relativePosition = (UnityEngine.Vector2)transform.localPosition - _initialPosition;
@@ -52,16 +57,21 @@ public class AgentAI : Agent{
         }
 
         float _distanceTraveled = transform.localPosition.x - _initialPosition.x;
-        if(_distanceTraveled >= 1.0f && !episodeEnded){
+        float _totalDistanceTraveled = _initialPosition.x + _distanceTraveled;
+        float _targetDistance = Mathf.Ceil(_totalDistanceTraveled) + 1.0f;
+        if(_distanceTraveled >= _targetDistance && !episodeEnded){
             SetReward(1.0f);
             _initialPosition = transform.localPosition;
             //episodeEnded = true;
             //EndEpisode();
         }
-        else if (_distanceTraveled <0f){
-            SetReward(-0.5f);
+        else if(_distanceTraveled < _targetDistance && !episodeEnded){
+            SetReward(0.1f);
         }
-        if(_fuelController.GetCurrentFuel() <= 0f & !episodeEnded){
+        /* else if (_distanceTraveled <0f){
+            SetReward(-0.5f);
+        } */
+        if(_fuelController.GetCurrentFuel() <= 0.2f & !episodeEnded){
             episodeEnded = true;
             Debug.Log("Episode ended");
             EndEpisode();
