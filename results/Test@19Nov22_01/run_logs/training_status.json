@@ -1,0 +1,47 @@
+{
+    "EndlessRunner": {
+        "checkpoints": [
+            {
+                "steps": 160681,
+                "file_path": "results\\Test@19Nov22_01\\EndlessRunner\\EndlessRunner-160681.onnx",
+                "reward": 1996.75,
+                "creation_time": 1700413003.5214684,
+                "auxillary_file_paths": [
+                    "results\\Test@19Nov22_01\\EndlessRunner\\EndlessRunner-160681.pt"
+                ]
+            },
+            {
+                "steps": 192369,
+                "file_path": "results\\Test@19Nov22_01\\EndlessRunner\\EndlessRunner-192369.onnx",
+                "reward": null,
+                "creation_time": 1700450101.531092,
+                "auxillary_file_paths": [
+                    "results\\Test@19Nov22_01\\EndlessRunner\\EndlessRunner-192369.pt"
+                ]
+            },
+            {
+                "steps": 193713,
+                "file_path": "results\\Test@19Nov22_01\\EndlessRunner\\EndlessRunner-193713.onnx",
+                "reward": null,
+                "creation_time": 1700450818.392693,
+                "auxillary_file_paths": [
+                    "results\\Test@19Nov22_01\\EndlessRunner\\EndlessRunner-193713.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 193713,
+            "file_path": "results\\Test@19Nov22_01\\EndlessRunner.onnx",
+            "reward": null,
+            "creation_time": 1700450818.392693,
+            "auxillary_file_paths": [
+                "results\\Test@19Nov22_01\\EndlessRunner\\EndlessRunner-193713.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.1+cu118"
+    }
+}
