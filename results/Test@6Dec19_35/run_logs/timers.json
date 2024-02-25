@@ -1,0 +1,42 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1701871511",
+        "python_version": "3.9.17 (main, Jul  5 2023, 20:47:11) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "\\\\?\\C:\\Users\\nikit\\.conda\\envs\\mlagents20\\Scripts\\mlagents-learn hill-climb.yaml --run-id=Test@6Dec19_35",
+        "mlagents_version": "0.30.0",
+        "mlagents_envs_version": "0.30.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.0.1+cu118",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1701871516"
+    },
+    "total": 5.516703700000001,
+    "count": 1,
+    "self": 0.003970300000000648,
+    "children": {
+        "run_training.setup": {
+            "total": 0.05121310000000001,
+            "count": 1,
+            "self": 0.05121310000000001
+        },
+        "TrainerController.start_learning": {
+            "total": 5.4615203,
+            "count": 1,
+            "self": 9.259999999944313e-05,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 5.4614162,
+                    "count": 1,
+                    "self": 5.4614162
+                },
+                "TrainerController._save_models": {
+                    "total": 1.1500000000275179e-05,
+                    "count": 1,
+                    "self": 1.1500000000275179e-05
+                }
+            }
+        }
+    }
+}
