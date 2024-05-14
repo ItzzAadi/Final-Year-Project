@@ -1,0 +1,65 @@
+{
+    "EndlessRunner": {
+        "checkpoints": [
+            {
+                "steps": 6499296,
+                "file_path": "results\\April14thNew\\EndlessRunner\\EndlessRunner-6499296.onnx",
+                "reward": 1000.0,
+                "creation_time": 1713115279.83392,
+                "auxillary_file_paths": [
+                    "results\\April14thNew\\EndlessRunner\\EndlessRunner-6499296.pt"
+                ]
+            },
+            {
+                "steps": 6999599,
+                "file_path": "results\\April14thNew\\EndlessRunner\\EndlessRunner-6999599.onnx",
+                "reward": 1000.0,
+                "creation_time": 1713116209.1160338,
+                "auxillary_file_paths": [
+                    "results\\April14thNew\\EndlessRunner\\EndlessRunner-6999599.pt"
+                ]
+            },
+            {
+                "steps": 7499919,
+                "file_path": "results\\April14thNew\\EndlessRunner\\EndlessRunner-7499919.onnx",
+                "reward": 1000.0,
+                "creation_time": 1713117113.515071,
+                "auxillary_file_paths": [
+                    "results\\April14thNew\\EndlessRunner\\EndlessRunner-7499919.pt"
+                ]
+            },
+            {
+                "steps": 7999222,
+                "file_path": "results\\April14thNew\\EndlessRunner\\EndlessRunner-7999222.onnx",
+                "reward": 1000.0,
+                "creation_time": 1713118045.169063,
+                "auxillary_file_paths": [
+                    "results\\April14thNew\\EndlessRunner\\EndlessRunner-7999222.pt"
+                ]
+            },
+            {
+                "steps": 8302001,
+                "file_path": "results\\April14thNew\\EndlessRunner\\EndlessRunner-8302001.onnx",
+                "reward": null,
+                "creation_time": 1713118590.760101,
+                "auxillary_file_paths": [
+                    "results\\April14thNew\\EndlessRunner\\EndlessRunner-8302001.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 8302001,
+            "file_path": "results\\April14thNew\\EndlessRunner.onnx",
+            "reward": null,
+            "creation_time": 1713118590.760101,
+            "auxillary_file_paths": [
+                "results\\April14thNew\\EndlessRunner\\EndlessRunner-8302001.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.1+cu118"
+    }
+}
